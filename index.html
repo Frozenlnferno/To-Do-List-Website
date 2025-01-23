@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Programming Survey</h1>
+    <!-- Can use method GET or POST. GET is used to easily see the values -->
+    <form method="GET">
+        <div class="basic info">
+            First Name: <input type="text" name="firstname"><br>
+            Last Name: <input type="text" name="lastname"><br>
+            Email: <input type="email" required name="email"><br>
+            Password: <input type="password" required min=5 max=32><br>
+            Birthday: <input type="date"><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br> 
+        </div>
+        <br>
+        <div class="survey">
+            How many years of programming experience do you have?
+            <select name="experience">
+                <option value="n/a">Choose an answer</option>
+                <option value="0">0-1</option>
+                <option value="1-3">1-3</option>
+                <option value="3-5">3-5</option>
+                <option value="5+">5+</option>
+            </select><br><br>
+            What programming languages do you know? <br>
+            <input type="checkbox" name="programming_language">Java<br>
+            <input type="checkbox" name="programming_language">JavaScript<br>
+            <input type="checkbox" name="programming_language">Python<br>
+            <input type="checkbox" name="programming_language">C++<br>
+            <input type="checkbox" name="programming_language">C<br>
+            <input type="checkbox" name="programming_language">Others<br>
+        </div><br> 
+        <div class="submission">
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>    
+</body>
+</html>
+
+<!-- 
+ firstname=J
+&lastname=O
+&email=JO%40g
+&gender=male
+&experience=5%2B
+&programming_language=on
+&programming_language=on
+&programming_language=on
+&programming_language=on
+&programming_language=on
+&programming_language=on 
+-->
