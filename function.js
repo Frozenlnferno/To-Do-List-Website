@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", loadTasks);
 
 function openModal() {
-    document.getElementById('taskModal').style.display = 'block';
+    document.getElementById('taskModal').style.display = 'flex';
 }
 
 function closeModal() {

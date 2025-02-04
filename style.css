@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
     background-color: #e3f2fd;
     margin: 0;
@@ -13,7 +14,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 400px;
+    width: 50%;
+    height: 90%;
 }
 h2, h3 {
     color: #1565c0;
@@ -31,26 +33,45 @@ button:hover {
     background: #0d47a1;
 }
 .modal {
-    display: none;
+    display: none; /*Becomes flex once opened*/
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    flex-direction: column;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .modal input {
-    display: block;
-    width: 100%;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-.modal button {
-    margin-right: 5px;
+
+.modal textarea {
+    margin-bottom: 10px;
+    padding-bottom: 100px;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal #buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 5px;  
+}
+.modol button {
+    flex: 1; /* Makes buttons expand equally */
+  padding: 10px;
+  text-align: center;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+
 }
 ul {
     list-style: none;
