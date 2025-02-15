@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>To Do</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>To-Do List</h2>
-        <button onclick="openModal()">New Task</button>
-        <h3>Current Tasks</h3>
-        <ul id="taskList"></ul>
-        <h3>Completed Tasks</h3>
-        <ul id="completedList"></ul>
-    </div>
-    
-    <div id="taskModal" class="modal">
-        <h3>New Task</h3>
-        <input type="text" id="taskName" placeholder="Task Name">
-        <textarea id="taskDescription" placeholder="Task Description"></textarea>
-        <input type="date" id="taskDeadline">
-        <div id="buttons">
-            <button onclick="saveTask()">Save</button>
-            <button onclick="closeModal()">Cancel</button>
+    <div class="website">
+        <div class="background">
+            <div class="header">
+                <h1>My To-Dos</h1>
+            </div>
+            <div class="container centered">
+                <input type="text" class="add-task" placeholder="Add new task...">
+                <button class="add-button">Add</button>
+            </div>
+            <hr>
         </div>
     </div>
-    <script src="function.js"></script>
 </body>
 </html>
